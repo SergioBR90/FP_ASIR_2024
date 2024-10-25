@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos estructurales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, main, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        main {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        ul, ol {
+            padding-left: 0; /* Eliminar el relleno por defecto de las listas */
+            list-style-position: inside; /* Para que los puntos estén pegados al texto */
+        }
+        ul .custom-image {
+            list-style-image: url('https://example.com/mi-imagen.png'); /* Reemplaza la URL por la de una imagen real */
+            list-style-image: url('sqpurple.gif');
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Tipos de Sistemas Operativos</h1>
+        <p>Linux, Windows, Mac son los más utilizados a día de hoy</p>
+        <ul class="custom-image">
+            <li>Linux</li>
+            <li>Windows</li>
+            <li>Mac</li>
+            <li>Unix</li>
+        </ul>
+        <ol>
+            <li>Sistemas operativos Libres</li>
+            <li>Sistemas operativos Propietarios</li>
+            <li>Sistemas operativos de código abierto</li>
+        </ol>
+    </header>
+    <main>
+        
+		 <article>
+            <a target="_blank" href="https://www.linux.org/">Ir a Linux</a>
+            <p>Es un sistema operativo libre, por tanto podemos acceder a su código fuente.</p>
+        </article>
+
+        <article>
+            <a target="_blank" href="https://www.microsoft.com/es-es/">Ir a Windows</a>
+            <p>Es un sistema operativo propietario, por tanto es de pago y no podemos acceder a su código fuente.</p>
+        </article>
+
+        <article>
+            <a target="_blank" href="https://www.microsoft.com/es-es/">Ir a Windows</a>
+            <p>Es desarrollado y administrado por Apple, es un sistema operativo propietario.</p>
+        </article>
+        <article>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/Unix">Ir a Unix</a>
+            <p>Un sistema operativo poderoso utilizado principalmente en servidores y estaciones de trabajo. macOS tiene una base Unix.</p>
+        </article>
+        <dl>
+            <dt>Sistemas Operativos Monolíticos</dt>
+            <dd>En los sistemas operativos monolíticos, todo el sistema operativo (gestión de procesos, gestión de memoria, controladores de dispositivos, sistema de archivos, etc.) está integrado en un solo programa, el kernel.
+             El kernel tiene control total y directo sobre el hardware, y todos los servicios están estrechamente integrados.</dd>
+          
+            <dt>Sistemas Operativos de Microkernel</dt>
+            <dd>En este tipo de sistemas, solo las funciones esenciales (como la comunicación entre procesos y la gestión básica de la memoria) están incluidas en el microkernel.
+             Las otras funciones del sistema operativo, como la gestión de archivos o los controladores de dispositivos, se ejecutan en el espacio de usuario como procesos separados, fuera del kernel.</dd>
+          
+            <dt>Sistemas Operativos Híbridos</dt>
+            <dd>Los sistemas operativos híbridos combinan características de los sistemas monolíticos y de microkernel. El núcleo incluye algunas características adicionales (además de las esenciales),
+             pero sigue permitiendo que ciertos servicios funcionen como procesos de usuario fuera del kernel.</dd>
+
+             <dt>Sistemas Operativos en capas</dt>
+            <dd>En un sistema operativo en capas, el diseño está organizado en niveles jerárquicos. Cada capa proporciona servicios a la capa superior y utiliza los servicios de la capa inferior.
+             La capa más baja interactúa directamente con el hardware, mientras que la capa más alta interactúa con el usuario o con las aplicaciones</dd>
+        </dl>
+        
+    </main>
+    <footer>
+        <p>© 2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
