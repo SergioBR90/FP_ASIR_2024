@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos estructurales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, main, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        main {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        ul, ol {
+            padding-left: 0; 
+            list-style-position: inside; 
+        }
+
+        
+        .so-header {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none; 
+        }
+        .linux-header {
+            background-color: #0078D4; 
+        }
+        .windows-header {
+            background-color: #00A2ED; 
+        }
+        .mac-header {
+            background-color: #FF4500; 
+        }
+        .unix-header {
+            background-color: #8A2BE2; 
+        }
+
+        
+        .so-box {
+            border: 2px solid #000;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .linux {
+            background-color: #f0f8ff;
+            border-color: #0078D4;
+        }
+        .windows {
+            background-color: #f9f9e9;
+            border-color: #0078D4;
+        }
+        .mac {
+            background-color: #ffe4e1;
+            border-color: #ff4500;
+        }
+        .unix {
+            background-color: #e6e6fa;
+            border-color: #8a2be2;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Tipos de Sistemas Operativos</h1>
+        <p>Linux, Windows, Mac son los más utilizados a día de hoy</p>
+        <div>
+            <a href="https://www.linux.org/" target="_blank" class="so-header linux-header">Linux</a>
+            <a href="https://www.microsoft.com/es-es/" target="_blank" class="so-header windows-header">Windows</a>
+            <a href="https://www.apple.com/" target="_blank" class="so-header mac-header">Mac</a>
+            <a href="https://es.wikipedia.org/wiki/Unix" target="_blank" class="so-header unix-header">Unix</a>
+        </div>
+        <ol>
+            <li>Sistemas operativos Libres</li>
+            <li>Sistemas operativos Propietarios</li>
+            <li>Sistemas operativos de código abierto</li>
+        </ol>
+    </header>
+    <main>
+        
+        <h2>Introducción a los Sistemas Operativos</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/fsuroRYmagw" frameborder="0" allowfullscreen></iframe>
+
+        
+        <div class="so-box linux">
+            <h2>Linux</h2>
+            <p>Es un sistema operativo <mark>libre</mark>, por tanto podemos acceder a su código fuente.</p>
+            <p>Linux es utilizado en más del <meter value="0.8">80%</meter> de los servidores web.</p>
+            <p>Fecha de lanzamiento inicial: <time datetime="1991-09-17">17 de septiembre de 1991</time>.</p>
+            <audio controls>
+                <source src="/home/alumnom/Descargas/videoplayback5.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+
+        
+        <div class="so-box windows">
+            <h2>Windows</h2>
+            <p>Es un sistema operativo <mark>propietario</mark>, por tanto es de pago y no podemos acceder a su código fuente.</p>
+            <p>Adopción global del sistema operativo en ordenadores personales: <meter value="0.75" min="0" max="1">75%</meter></p>
+            <p>Fecha de lanzamiento inicial: <time datetime="1985-11-20">20 de noviembre de 1985</time>.</p>
+            <audio controls>
+                <source src="/home/alumnom/Descargas/videoplayback3.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+
+        
+        <div class="so-box mac">
+            <h2>Mac</h2>
+            <p>Es desarrollado y administrado por Apple, es un sistema operativo <mark>propietario.</mark></p>
+            <p>Progreso de actualizaciones en curso: <progress value="0.6" max="1">60%</progress></p>
+            <p>Fecha de lanzamiento inicial: <time datetime="2001-03-24">24 de marzo de 2001</time>.</p>
+            <audio controls>
+                <source src="/home/alumnom/Descargas/videoplayback2.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+
+       
+        <div class="so-box unix">
+            <h2>Unix</h2>
+            <p>Un sistema operativo poderoso utilizado principalmente en <mark>servidores</mark> y estaciones de trabajo. macOS tiene una base Unix.</p>
+            <p>Adopción en servidores de alta disponibilidad: <meter value="0.9" min="0" max="1">90%</meter></p>
+            <p>Fecha de desarrollo inicial: <time datetime="1969-01-01">1969</time>.</p>
+            <audio controls>
+                <source src="/home/alumnom/Descargas/videoplayback4.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
