@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(209, 12%, 55%);
+    color: rgba(156, 49, 49, 0.8);
+    padding: 20px;
+}
+
+.text-example .intro {
+    background-color: hsla(200, 100%, 90%, 0.5);
+    color: hsl(300, 60%, 40%);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid hsla(200, 100%, 50%, 0.5);
+    margin-bottom: 20px;
+}
+
+
+.content .windows {
+    background-color: hsla(45, 100%, 90%, 0.7); 
+    color: hsl(30, 20%, 30%); 
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.content .linux {
+    background-color: hsla(120, 100%, 90%, 0.7); 
+    color: hsl(120, 20%, 30%); 
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.content .apple {
+    background-color: hsla(180, 80%, 85%, 0.7); 
+    color: hsl(180, 30%, 25%); 
+    padding: 10px;
+    border: 2px solid hsla(180, 80%, 50%, 0.5);
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}

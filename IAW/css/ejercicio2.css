@@ -1,0 +1,33 @@
+p:not(.intro) {
+    color: rgb(97, 159, 201);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    text-align: center; 
+}
+.text-example p::first-line {
+    color: rgb(219, 20, 20);
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.content p:nth-of-type(2) {
+    background-color: rgb(188, 216, 182);
+    padding: 5px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+    margin: 0 auto; 
+    border-radius: 4px; 
+}
+
+.content p:nth-last-of-type(1) {
+    background-color: rgb(193, 204, 37);
+    padding: 5px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+    margin: 0 auto;
+    border-radius: 6px; 
+}
+
+.test{
+    color: rgb(212, 143, 13);
+    text-shadow: 1px 1px 3px rgba(184, 19, 170, 0.5);
+    text-align: center;
+}

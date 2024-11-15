@@ -1,0 +1,19 @@
+
+.text-example p::first-line {
+    color: rgb(0, 38, 255);
+}
+
+
+p:not(.intro) {
+    color: rgb(161, 95, 161);
+}
+
+.content p:nth-of-type(2) {
+    background-color: lightyellow;
+    padding: 5px;
+}
+
+.content p:nth-last-of-type(1) {
+    background-color: lightgray;
+    padding: 5px;
+}
