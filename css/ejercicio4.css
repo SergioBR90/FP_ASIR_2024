@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#e0eafc, #2664b9); 
+    margin: 0;
+    padding: 0;
+}
+
+.text-example {
+    padding: 20px;
+    text-align: center;
+    background: radial-gradient(circle, #ff8c00, #ff0080);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.windows {
+    padding: 20px;
+    background: linear-gradient(#00c6ff, #ff00c8);
+    color: white;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.linux {
+    padding: 20px;
+    background-color: transparent;
+    background: radial-gradient(circle at top left, #b5d118, #155724);
+    color: red;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.apple {
+    padding: 20px;
+    background: linear-gradient(red,orange, yellow, green,blue, violet);
+    color: rgb(black);
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+

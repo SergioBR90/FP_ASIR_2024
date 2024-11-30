@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Colspan y Formato Mejorado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        th {
+            background-color: #4c63af;
+            color: white;
+        }
+        tfoot td {
+            background-color: #9e3c3c;
+            font-weight: bold;
+        }
+        .expanded-row {
+            background-color: #f6f7f3;
+            text-align: left;
+            font-style: italic;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Información de Sistemas Operativos</caption>
+        <thead>
+            <tr>
+                <th colspan="3">Información sobre Sistemas Operativos</th> 
+            </tr>
+            <tr>
+                <th>Sistema</th>
+                <th>Año</th>
+                <th>Creador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linux</td>
+                <td>1991</td>
+                <td>Linus Torvalds</td>
+            </tr>
+            <tr>
+                <td>Unix</td>
+                <td>1969</td>
+                <td colspan="2" class="expanded-row">Ken Thompson y Dennis Ritchie (Lugar de creación: Nueva Jersey)</td> 
+            </tr>
+            <tr>
+                <td>Windows</td>
+                <td>1985</td>
+                <td>Bill Gates y Paul Allen</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>1976</td>
+                <td>Steve Jobs</td>
+            </tr>
+            <tr class="expanded-row">
+                <td colspan="3">Descripción adicional: Esta tabla presenta información básica sobre los sistemas operativos más influyentes y sus creadores.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Información recopilada en 2024</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
