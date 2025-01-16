@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Sistemas operativos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, main, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        main {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        ul, ol {
+            padding-left: 0; /* Eliminar el relleno por defecto de las listas */
+            list-style-position: inside; /* Para que los puntos estén pegados al texto */
+        }
+        ul.custom-image {
+            list-style-image: url('https://example.com/mi-imagen.png'); /* Reemplaza la URL por la de una imagen real */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header> 
+        <img src="imagenes/imagendefondo1.jpg" alt="Logotipo" width="300" height="auto">
+        <h1>Tipos de Sistemas Operativos</h1>
+        <p>Linux, Windows, Mac son los más utilizados a día de hoy</p>
+        <ul class="custom-image">
+            <li>Linux</li>
+            <li>Windows</li>
+            <li>Mac</li>
+            <li>Unix</li>
+        </ul>
+        <ol>
+            <li>Sistemas operativos Libres</li>
+            <li>Sistemas operativos Propietarios</li>
+            <li>Sistemas operativos de código abierto</li>
+        </ol>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <article> 
+            <h2>Linux</h2>
+            <a target="_blank" href="https://www.linux.org/">Ir a Linux</a>
+            <p>Es un sistema operativo libre, por tanto podemos acceder a su código fuente.</p>
+        </article>
+
+        <article>
+            <h2>Windows</h2>
+            <a target="_blank" href="https://www.microsoft.com/es-es/">Ir a Windows</a>
+            <p>Es un sistema operativo propietario, por tanto es de pago y no podemos acceder a su código fuente.</p>
+        </article>
+
+        <article>
+            <h2>Mac</h2>
+            <a target="_blank" href="https://www.microsoft.com/es-es/">Ir a Windows</a>
+            <p>Es desarrollado y administrado por Apple, es un sistema operativo propietario.</p>
+        </article>
+
+        <article>
+            <h2>Unix</h2>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/Unix">Ir a Unix</a>
+            <p>Un sistema operativo poderoso utilizado principalmente en servidores y estaciones de trabajo. macOS tiene una base Unix.</p>
+        </article>
+
+        <dl>
+            <dt>Sistemas Operativos Monolíticos</dt>
+            <dd>En los sistemas operativos monolíticos, todo el sistema operativo está integrado en un solo programa, el kernel, que tiene control total y directo sobre el hardware.</dd>
+          
+            <dt>Sistemas Operativos de Microkernel</dt>
+            <dd>Solo las funciones esenciales están en el microkernel. Las demás funciones se ejecutan en el espacio de usuario como procesos separados.</dd>
+          
+            <dt>Sistemas Operativos Híbridos</dt>
+            <dd>Combina características de los sistemas monolíticos y de microkernel, permitiendo que ciertos servicios funcionen como procesos de usuario.</dd>
+
+            <dt>Sistemas Operativos en Capas</dt>
+            <dd>El diseño está organizado en niveles jerárquicos. Cada capa proporciona servicios a la capa superior y utiliza los servicios de la capa inferior.</dd>
+        </dl>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

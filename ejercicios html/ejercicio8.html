@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            width: 300px; 
+            margin: auto;
+            padding: 20px; 
+            border: 1px solid #ddd;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px; 
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px; 
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de Contacto</h1>
+
+    <form action="/enviar_formulario" method="post">
+        <label for="nombre">Nombre y Apellidos</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellidos">
+
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni" placeholder="Número de DNI">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Número de teléfono">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
