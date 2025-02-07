@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Varios Tipos de Sistemas Operativos</title>
+</head>
+<body>
+
+    <h1>Formulario de Ejemplo</h1>
+
+    <form action="/enviar_formulario" method="post">
+        
+        <label for="range">Selecciona un valor (0 a 50):</label>
+        <input type="range" id="range" name="range" min="0" max="100" step="10">
+
+        <label for="number">Número (1 a 5):</label>
+        <input type="number" id="number" name="number" min="1" max="5" placeholder="Introduce un número" required>
+
+        <label for="date">Fecha de Nacimiento:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="place">Lugar de Nacimiento:</label>
+        <input type="text" id="place" name="place" placeholder="Introduce tu lugar de nacimiento" required>
+
+        <label for="username">Nombre de Usuario (solo letras y números):</label>
+        <input type="text" id="username" name="username" placeholder="Ej. usuario123" pattern="[A-Za-z0-9]+" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
